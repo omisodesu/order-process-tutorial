@@ -1,5 +1,3 @@
-'use client'
-
 import React, { useState } from 'react'
 import { ChevronRight, ChevronLeft, ChevronDown, ChevronUp, AlertCircle, Mail } from 'lucide-react'
 
@@ -75,7 +73,7 @@ const preOrderConfirmation = {
   ]
 }
 
-export function OrderProcessTutorialComponent() {
+export default function OrderProcessTutorial() {
   const [expandedStep, setExpandedStep] = useState<string | null>("0")
 
   return (
